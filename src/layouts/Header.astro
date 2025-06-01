@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets"
+import angleRight from "../assets/angle-right.svg"
+---
+
+<header class="flex gap-8 p-5 items-center">
+  <Image src="/updraft.png" alt="Logo" width={46} height={46} />
+
+  <div class="flex items-center gap-10 ml-auto">
+    <a href="/">Home Page</a>
+    <a href="/about">About us</a>
+    <a href="/explore">Get Started</a>
+    <a href="/explore" class="flex gap-2"
+      >Explore Ideas
+      <Image
+        src={angleRight}
+        alt="angle right"
+        class="rotate-90"
+        width={24}
+        height={24}
+      />
+    </a>
+  </div>
+  <div class="flex items-center gap-2">
+    <button
+      class="px-5 bg-white hover:bg-black/20 transition-colors py-2 border"
+    >
+      Sign Up
+    </button>
+    <button
+      class="px-5 border bg-black hover:bg-black/80 transition-colors text-white py-2"
+    >
+      Login
+    </button>
+  </div>
+</header>

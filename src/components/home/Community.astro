@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets"
+import angleRight from "../../assets/angle-right.svg"
+---
+
+<section class="my-20 container mx-auto flex items-center gap-20">
+  <div>
+    <h2 class="text-5xl leading-14 font-bold">
+      Unlock Your Potential with Updraft
+    </h2>
+
+    <p class="mt-6 text-lg">
+      Join a community where your ideas can thrive. Whether you're a builder,
+      funder, or organization, Updraft offers unique opportunities to make a
+      meaningful impact.
+    </p>
+    <div class="mt-8 flex items-center gap-6">
+      <button class="px-6 py-3 border"> Join </button>
+      <button class="px-6 py-3 flex items-center gap-1">
+        Learn More
+        <Image src={angleRight} alt="angle right" width={24} height={24} />
+      </button>
+    </div>
+  </div>
+  <Image
+    src="/images/landing-image-4.png"
+    alt="landing image 4"
+    width={616}
+    height={640}
+  />
+</section>

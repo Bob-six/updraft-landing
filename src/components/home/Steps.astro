@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets"
+import angleRight from "../../assets/angle-right.svg"
+---
+
+<section class="my-20 container mx-auto gap-20">
+  <h1 class="text-center leading-18 text-5xl font-bold">
+    Discover How Updraft Empowers <br /> Community-Driven Solutions for Public <br
+    /> Good
+  </h1>
+
+  <div class="mt-20 flex justify-center gap-12 items-center">
+    <div class="flex flex-col max-w-[405px]">
+      <Image
+        src="/images/landing-image-3.png"
+        alt="landing image 3"
+        width={405}
+        height={240}
+      />
+      <h4 class="mt-8 text-2xl font-bold leading-8 text-center">
+        Transform Ideas into Impactful Projects with Our Step-by-Step Process
+      </h4>
+      <p class="mt-4 text-center">
+        From idea proposal to project implementation, our platform guides you
+        every step of the way.
+      </p>
+
+      <div class="mt-8 flex justify-center items-center gap-2">
+        Learn More
+        <Image src={angleRight} alt="angle right" width={24} height={24} />
+      </div>
+    </div>
+    <div class="flex flex-col max-w-[405px]">
+      <Image
+        src="/images/landing-image-3.png"
+        alt="landing image 3"
+        width={405}
+        height={240}
+      />
+      <h4 class="mt-8 text-2xl font-bold leading-8 text-center">
+        Propose Your Idea and Gather Support from the Community
+      </h4>
+      <p class="mt-4 text-center">
+        Share your innovative ideas and rally support to bring them to life.
+      </p>
+
+      <div class="mt-8 flex justify-center items-center gap-2">
+        Sign Up
+        <Image src={angleRight} alt="angle right" width={24} height={24} />
+      </div>
+    </div>
+    <div class="flex flex-col max-w-[405px]">
+      <Image
+        src="/images/landing-image-3.png"
+        alt="landing image 3"
+        width={405}
+        height={240}
+      />
+      <h4 class="mt-8 text-2xl font-bold leading-8 text-center">
+        Fund Projects That Matter and Earn Rewards for Your Contributions
+      </h4>
+      <p class="mt-4 text-center">
+        Support projects that align with your values and get rewarded for your
+        early backing.
+      </p>
+
+      <div class="mt-8 flex justify-center items-center gap-2">
+        Join Us
+        <Image src={angleRight} alt="angle right" width={24} height={24} />
+      </div>
+    </div>
+  </div>
+</section>

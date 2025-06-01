@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets"
+import angleRight from "../../assets/angle-right.svg"
+---
+
+<section class="my-20 container mx-auto flex gap-20">
+  <div>
+    <h2 class="text-5xl leading-14 font-bold">
+      Transforming Ideas into Actionable Solutions
+    </h2>
+  </div>
+  <div>
+    <p class="text-lg">
+      Join a thriving community dedicated to innovation. Together, we can create
+      lasting change through funded projects.
+    </p>
+    <div class="mt-8 flex items-center gap-6">
+      <div>
+        <h4 class="text-5xl font-bold">100+</h4>
+        <p class="mt-2">Projects funded and making a difference today.</p>
+      </div>
+      <div>
+        <h4 class="text-5xl font-bold">500+</h4>
+        <p class="mt-2">Active users collaborating for a better future.</p>
+      </div>
+    </div>
+    <div class="mt-8 flex items-center gap-6">
+      <button class="px-6 py-3 border"> Learn More </button>
+      <button class="px-6 py-3 flex items-center gap-1">
+        Sign Up
+        <Image src={angleRight} alt="angle right" width={24} height={24} />
+      </button>
+    </div>
+  </div>
+</section>

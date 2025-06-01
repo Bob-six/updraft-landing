@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets"
+import star from "../../assets/star.svg"
+---
+
+<section class="my-20 container mx-auto gap-20">
+  <h1 class="text-5xl font-bold">User Feedback</h1>
+  <p class="mt-6 text-lg">
+    We value your feedback! Please let us know your thoughts and suggestions to
+    help us improve.
+  </p>
+
+  <div class="mt-20 flex items-center gap-60">
+    <div class="flex-1">
+      <div class="flex items-center gap-1">
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+      </div>
+      <h5 class="my-8 text-xl font-bold">
+        "Updraft made it easy to get support for my project!"
+      </h5>
+
+      <div class="flex items-center gap-5">
+        <Image
+          src="/images/profile-image.png"
+          alt="profile image"
+          width={56}
+          height={56}
+        />
+        <div>
+          <p class="font-semibold">Alice Johnson</p>
+          <p>Founder, Innovate Co.</p>
+        </div>
+        <div class="h-12 w-px bg-black"></div>
+        <Image
+          src="/images/webflow.png"
+          alt="webflow"
+          width={128}
+          height={48}
+        />
+      </div>
+    </div>
+    <div>
+      <div class="flex items-center gap-1">
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+        <Image src={star} alt="star" width={20} height={19} />
+      </div>
+      <h5 class="my-8 text-xl font-bold">
+        "Updraft made it easy to get support for my project!"
+      </h5>
+
+      <div class="flex items-center gap-5">
+        <Image
+          src="/images/profile-image.png"
+          alt="profile image"
+          width={56}
+          height={56}
+        />
+        <div>
+          <p class="font-semibold">Alice Johnson</p>
+          <p>Founder, Innovate Co.</p>
+        </div>
+        <div class="h-12 w-px bg-black"></div>
+        <Image
+          src="/images/webflow.png"
+          alt="webflow"
+          width={128}
+          height={48}
+        />
+      </div>
+    </div>
+  </div>
+</section>
