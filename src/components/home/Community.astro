@@ -3,7 +3,9 @@ import { Image } from "astro:assets"
 import angleRight from "../../assets/angle-right.svg"
 ---
 
-<section class="my-20 container mx-auto flex items-center gap-20">
+<section
+  class="my-20 container mx-auto flex flex-wrap md:flex-nowrap items-center gap-20"
+>
   <div>
     <h2 class="text-5xl leading-14 font-bold">
       Unlock Your Potential with Updraft
@@ -26,6 +28,7 @@ import angleRight from "../../assets/angle-right.svg"
     src="/images/landing-image-4.png"
     alt="landing image 4"
     width={616}
+    class="mx-auto"
     height={640}
   />
 </section>
