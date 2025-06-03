@@ -10,7 +10,10 @@ import "aos/dist/aos.css"
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width,maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +26,7 @@ import "aos/dist/aos.css"
 
     <title>Astro Basics</title>
   </head>
-  <body class="bg-zinc-900 text-slate-100">
+  <body class="bg-zinc-900 overflow-x-hidden text-slate-100">
     <slot />
     <Footer />
 
