@@ -9,13 +9,29 @@ import Community from "@/components/home/Community.astro"
 import Stats from "@/components/home/Stats.astro"
 import Feedback from "@/components/home/Feedback.astro"
 import JoinUs from "@/components/home/JoinUs.astro"
+import { BeamsBackground } from "@/components/ui/beams-background"
+import Header from "@/layouts/Header.astro"
+import { Image } from "astro:assets"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <Hero />
+  <BeamsBackground client:load>
+    <Header />
+    <Hero />
+  </BeamsBackground>
+  <section class="my-20" data-aos="fade-up">
+    <Image
+      class="rounded-2xl mx-auto"
+      src="/images/landing-image-1.png"
+      alt="Landing Image 1"
+      width={1312}
+      height={738}
+    />
+  </section>
+
   <Intro />
   <Features />
   <Steps />

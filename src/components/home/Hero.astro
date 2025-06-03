@@ -4,23 +4,28 @@ import { Image } from "astro:assets"
 
 <section class="mt-10 md:mt-28 container flex items-center gap-4 mx-auto">
   <div>
-    <h1 class="text-2xl md:text-6xl md:leading-24 font-bold">
+    <h1
+      class="text-2xl md:text-6xl md:leading-24 font-bold opacity-0"
+      id="hero-title"
+    >
       Empowering Communities to Transform Ideas into Impactful Solutions for All
     </h1>
 
-    <p>
+    <p class="opacity-0" id="hero-subtitle">
       Join us in shaping the future through collaborative funding and innovative
       problem-solving.
     </p>
 
     <div class="flex mt-9 items-center gap-3">
       <button
-        class="px-5 border bg-black hover:bg-black/80 transition-colors text-white py-3"
+        class="px-5 rounded-lg border bg-black hover:bg-black/80 transition-all transform hover:scale-105 text-white py-3 opacity-0"
+        id="start-button"
       >
         Get Started
       </button>
       <button
-        class="px-5 bg-white hover:bg-black/20 transition-colors py-3 border"
+        class="px-5 rounded-lg bg-white text-black hover:text-white hover:bg-black/20 transition-all transform hover:scale-105 py-3 border opacity-0"
+        id="learn-button"
       >
         Learn More
       </button>
@@ -29,12 +34,39 @@ import { Image } from "astro:assets"
   <div></div>
 </section>
 
-<section class="my-20">
-  <Image
-    class="rounded-2xl mx-auto"
-    src="/images/landing-image-1.png"
-    alt="Landing Image 1"
-    width={1312}
-    height={738}
-  />
-</section>
+<script>
+  function animate(element: HTMLElement, delay: number = 0) {
+    setTimeout(() => {
+      element.style.transition = "all 0.8s ease-out"
+      element.style.opacity = "1"
+      element.style.transform = "translateY(0)"
+    }, delay)
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("hero-title")
+    const subtitle = document.getElementById("hero-subtitle")
+    const startButton = document.getElementById("start-button")
+    const learnButton = document.getElementById("learn-button")
+
+    if (title) {
+      title.style.transform = "translateY(20px)"
+      animate(title, 100)
+    }
+
+    if (subtitle) {
+      subtitle.style.transform = "translateY(20px)"
+      animate(subtitle, 300)
+    }
+
+    if (startButton) {
+      startButton.style.transform = "translateY(20px)"
+      animate(startButton, 500)
+    }
+
+    if (learnButton) {
+      learnButton.style.transform = "translateY(20px)"
+      animate(learnButton, 700)
+    }
+  })
+</script>

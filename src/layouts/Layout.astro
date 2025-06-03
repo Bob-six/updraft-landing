@@ -1,8 +1,9 @@
 ---
-import Header from "./Header.astro"
 import Footer from "./Footer.astro"
 
 import "@/styles/global.css"
+
+import "aos/dist/aos.css"
 ---
 
 <!doctype html>
@@ -18,13 +19,20 @@ import "@/styles/global.css"
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Astro Basics</title>
   </head>
-  <body>
-    <Header />
+  <body class="bg-zinc-900 text-slate-100">
     <slot />
     <Footer />
+
+    <script>
+      import AOS from "aos"
+      AOS.init({
+        duration: 1000,
+      })
+    </script>
   </body>
 </html>
 
